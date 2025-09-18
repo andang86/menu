@@ -96,3 +96,218 @@
             content: '✓';
             color: #27ae60;
             font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* 장점/단점 섹션 스타일 */
+        .pros-cons {
+            margin-top: auto; /* 카드의 맨 아래에 위치하도록 함 */
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        .pros-cons .pros h3, .pros-cons .cons h3 {
+            margin-bottom: 10px;
+        }
+
+        .pros p {
+            color: #27ae60;
+            font-weight: 500;
+        }
+
+        .cons p {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+
+        /* 푸터 스타일 (투표 안내) */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #34495e;
+            color: #ecf0f1;
+            border-radius: 8px;
+        }
+        
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        /* 모바일 화면 대응 */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>신백김박안(申白金朴安): 청주 추천 맛집</h1>
+            <p>새로움, 담백함, 대표성, 소박함, 편안함이라는 5가지 테마로 검증된 청주 맛집을 소개합니다.</p>
+        </header>
+
+        <main class="card-grid">
+            <article class="card">
+                <h2>申(新): 차이팔사</h2>
+                <div class="section">
+                    <h3>📍 위치 및 분위기</h3>
+                    <p>용정동에 위치한 모던 차이니스 다이닝입니다. 고급스럽고 감각적인 인테리어로 데이트나 기념일 등 특별한 날에 어울립니다.</p>
+                </div>
+                <div class="section">
+                    <h3>🍽️ 메뉴 특징</h3>
+                    <ul>
+                        <li>예약이 필요한 '북경오리(베이징덕)'가 가장 유명한 대표 메뉴</li>
+                        <li>흑후추 안심, 어향가지 등 차별화된 현대적 중식 요리 제공</li>
+                    </ul>
+                </div>
+                 <div class="section">
+                    <h3>✅ 검증 포인트</h3>
+                    <p>분위기 좋은 데이트 장소라는 평이 많으며, 청주에서 제대로 된 북경오리를 맛볼 수 있는 독보적인 곳으로 인정받고 있습니다.</p>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>👍 장점</h3>
+                        <p>특별한 날의 분위기를 내기 좋으며, 세련된 요리와 공간을 경험할 수 있습니다.</p>
+                    </div>
+                    <div class="cons">
+                        <h3>👎 단점</h3>
+                        <p>대표 메뉴는 예약이 필수이며, 다른 중식당에 비해 가격대가 다소 높습니다.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>白(白): 경북식당</h2>
+                <div class="section">
+                    <h3>📍 위치 및 분위기</h3>
+                    <p>상당산성 남문 인근에 위치하며, 식사 후 산책을 즐기기 좋습니다. 정겨운 가정집 같은 분위기에서 편안하게 식사할 수 있습니다.</p>
+                </div>
+                <div class="section">
+                    <h3>🍽️ 메뉴 특징</h3>
+                    <ul>
+                        <li>푹 고아낸 닭/오리 백숙과 구수한 누룽지죽의 조화가 일품</li>
+                        <li>자극적이지 않고 맛깔스러운 갓김치, 동치미 등 밑반찬 제공</li>
+                    </ul>
+                </div>
+                 <div class="section">
+                    <h3>✅ 검증 포인트</h3>
+                    <p>모든 후기에서 '최소 1시간 전 예약 필수'가 강조됩니다. 부모님을 모시고 가는 가족 단위 방문객들의 만족도가 매우 높습니다.</p>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>👍 장점</h3>
+                        <p>자연 속에서 건강한 보양식을 즐길 수 있어 어른들이 특히 좋아하십니다.</p>
+                    </div>
+                    <div class="cons">
+                        <h3>👎 단점</h3>
+                        <p>예약 없이 방문하면 식사가 거의 불가능하고, 가는 길이 다소 좁을 수 있습니다.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>金(金): 쌍촌본가</h2>
+                <div class="section">
+                    <h3>📍 위치 및 분위기</h3>
+                    <p>율량동에 위치하며 매우 넓은 전용 주차장을 갖춰 편리합니다. 실내가 넓고 쾌적하여 단체 및 가족 모임에 최적화되어 있습니다.</p>
+                </div>
+                <div class="section">
+                    <h3>🍽️ 메뉴 특징</h3>
+                    <ul>
+                        <li>돼지/소갈비 등 고기 구이와 왕갈비탕, 함흥냉면 등 식사 메뉴 모두 인기</li>
+                        <li>남녀노소 누구나 좋아할 만한 대중적인 한식 메뉴 구성</li>
+                    </ul>
+                </div>
+                 <div class="section">
+                    <h3>✅ 검증 포인트</h3>
+                    <p>'주차 걱정, 메뉴 걱정 없는 곳'으로 통합니다. 여러 세대가 함께하는 가족 모임 장소로 실패가 없어 꾸준히 추천되고 있습니다.</p>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>👍 장점</h3>
+                        <p>접근성이 좋고 메뉴 선택의 폭이 넓어, 누구와 가도 만족스러운 식사가 가능합니다.</p>
+                    </div>
+                    <div class="cons">
+                        <h3>👎 단점</h3>
+                        <p>규모가 큰 만큼 다소 소란스러울 수 있어 조용한 식사 자리로는 부적합합니다.</p>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="card">
+                <h2>朴(朴): 동문집</h2>
+                <div class="section">
+                    <h3>📍 위치 및 분위기</h3>
+                    <p>상당산성 민속마을 초입에 위치합니다. 야외 평상 자리가 있는 등 시골집 같은 소박하고 정겨운 분위기가 특징입니다.</p>
+                </div>
+                <div class="section">
+                    <h3>🍽️ 메뉴 특징</h3>
+                    <ul>
+                        <li>바삭한 해물파전과 막걸리 조합이 가장 유명한 대표 메뉴</li>
+                        <li>두부김치, 도토리묵 등 간단하고 부담 없는 토속 음식 위주</li>
+                    </ul>
+                </div>
+                 <div class="section">
+                    <h3>✅ 검증 포인트</h3>
+                    <p>맛 자체보다 '산성에서 먹는 분위기'가 핵심입니다. 주말에는 등산객과 나들이객으로 항상 붐벼 웨이팅이 있을 수 있습니다.</p>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>👍 장점</h3>
+                        <p>나들이의 즐거움을 더해주는, 야외의 정취와 분위기를 만끽할 수 있습니다.</p>
+                    </div>
+                    <div class="cons">
+                        <h3>👎 단점</h3>
+                        <p>주말에는 매우 혼잡하고 주차가 불편할 수 있으며, 메뉴 선택 폭이 좁습니다.</p>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="card">
+                <h2>安(安): 천리향</h2>
+                <div class="section">
+                    <h3>📍 위치 및 분위기</h3>
+                    <p>용정동에 위치한 대형 중식당으로, 다양한 크기의 개별 룸을 다수 보유하여 조용하고 편안한 식사가 가능합니다.</p>
+                </div>
+                <div class="section">
+                    <h3>🍽️ 메뉴 특징</h3>
+                    <ul>
+                        <li>합리적인 가격의 점심 코스부터 고급 저녁 코스까지 선택 가능</li>
+                        <li>탕수육, 유린기 등 단품 요리들의 수준이 높아 여러 입맛을 맞추기 좋음</li>
+                    </ul>
+                </div>
+                 <div class="section">
+                    <h3>✅ 검증 포인트</h3>
+                    <p>'청주 상견례 장소'로 가장 많이 추천되는 곳 중 하나입니다. 독립된 공간과 안정적인 맛으로 중요한 모임에 적합함이 검증되었습니다.</p>
+                </div>
+                <div class="pros-cons">
+                    <div class="pros">
+                        <h3>👍 장점</h3>
+                        <p>독립된 공간에서 편안하게 대화하며 식사할 수 있어 모임의 만족도가 높습니다.</p>
+                    </div>
+                    <div class="cons">
+                        <h3>👎 단점</h3>
+                        <p>코스 요리는 가격 부담이 있을 수 있고, 시설이 최신 유행과는 다소 거리가 있습니다.</p>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>모든 후보를 둘러보신 후, 단체 채팅방의 투표 기능을 이용해 최종 결정을 진행해 주세요! 🗳️</p>
+        </footer>
+    </div>
+
+</body>
+</html>
